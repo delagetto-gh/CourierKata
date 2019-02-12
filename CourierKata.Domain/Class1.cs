@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CourierKata.Api
+namespace CourierKata.Domain
 {
     public class Class1
     {

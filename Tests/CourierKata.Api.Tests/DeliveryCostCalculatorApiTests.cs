@@ -15,7 +15,6 @@ namespace CourierKata.Api.Tests
 
         public DeliveryCostCalculatorApiTests()
         {
-
             this.sut = new DeliveryCostCalculatorApi();
         }
 
@@ -25,11 +24,11 @@ namespace CourierKata.Api.Tests
             var order = new OrderDto
             {
                 Parcels = new List<ParcelDto>
-     {
-                     new ParcelDto{Height = 4, Width = 4},
-                     new ParcelDto{Height = 20, Width = 25},
-                     new ParcelDto{Height = 20, Width = 25},
-        }
+                {
+                    new ParcelDto{Height = 4, Width = 4},
+                    new ParcelDto{Height = 20, Width = 25},
+                    new ParcelDto{Height = 20, Width = 25}
+                }
             };
 
             var result = this.sut.CalculateCost(order);
@@ -45,11 +44,11 @@ namespace CourierKata.Api.Tests
             var order = new OrderDto
             {
                 Parcels = new List<ParcelDto>
-     {
-                     new ParcelDto{Height = 4, Width = 4},
-                     new ParcelDto{Height = 20, Width = 25},
-                     new ParcelDto{Height = 20, Width = 25},
-        }
+                {
+                    new ParcelDto{Height = 4, Width = 4},
+                    new ParcelDto{Height = 20, Width = 25},
+                    new ParcelDto{Height = 20, Width = 25}
+                }
             };
 
             var result = this.sut.CalculateCost(order);
@@ -65,11 +64,11 @@ namespace CourierKata.Api.Tests
             var order = new OrderDto
             {
                 Parcels = new List<ParcelDto>
-     {
-                     new ParcelDto{Height = 4, Width = 4},
-                     new ParcelDto{Height = 20, Width = 25},
-                     new ParcelDto{Height = 20, Width = 25},
-        }
+                {
+                    new ParcelDto{Height = 4, Width = 4},
+                    new ParcelDto{Height = 20, Width = 25},
+                    new ParcelDto{Height = 20, Width = 25}
+                }
             };
 
             var result = this.sut.CalculateCost(order);
