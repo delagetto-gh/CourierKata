@@ -2,13 +2,13 @@ namespace CourierKata.Domain
 {
     public class DeliveryCost
     {
-        private object small;
-        private int v;
-
-        public DeliveryCost(object small, int v)
+        public DeliveryCost(ParcelSize size, decimal cost)
         {
-            this.small = small;
-            this.v = v;
+            this.ParcelSize = size;
+            this.Cost = cost;
         }
+
+        public ParcelSize ParcelSize { get; }
+        public decimal Cost { get; }
     }
 }

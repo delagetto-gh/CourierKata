@@ -49,7 +49,7 @@ namespace CourierKata.Domain.Tests
 
             var result = this.sut.CalculateDeliveryCost(parcel);
 
-            Assert.Equal(ParcelSize.XL, result.ParcelSize);
+            Assert.Equal(ParcelSize.Xl, result.ParcelSize);
         }
 
         [Fact]
