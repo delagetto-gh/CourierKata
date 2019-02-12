@@ -2,6 +2,6 @@
 {
     public interface IParcelDeliveryCostCalculatorService
     {
-        decimal CalculateDeliveryCost(ParcelType parcelSize);
+        DeliveryCost CalculateDeliveryCost(Parcel parcel);
     }
 }

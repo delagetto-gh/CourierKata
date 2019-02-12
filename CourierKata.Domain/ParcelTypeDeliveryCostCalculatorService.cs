@@ -5,25 +5,26 @@ namespace CourierKata.Domain
 {
     public class ParcelDeliveryCostCalculatorService : IParcelDeliveryCostCalculatorService
     {
-        private readonly Dictionary<ParcelType, decimal> sizeMap;
+        private readonly List<Func<Dimension, DeliveryCost>> sizeMap;
 
-        public ParcelTypeDeliveryCostCalculatorService()
+        public ParcelDeliveryCostCalculatorService()
         {
-            this.sizeMap = new Dictionary<ParcelType, decimal>
+            this.sizeMap = new List<Func<Dimension, DeliveryCost>>
             {
-                [ParcelType.Small] = 3,
-                [ParcelType.Medium] = 8,
-                [ParcelType.Large] = 15,
-                [ParcelType.XL] = 25,
+                {p => p.Height + p.Width < 10 ? new DeliveryCost(ParcelSize.Small, 3) : null},
+                {p => p.Height + p.Width < 50 ? new DeliveryCost(ParcelSize.Medium, 8) : null},
+                {p => p.Height + p.Width < 100 ? new DeliveryCost(ParcelSize.Large, 15) : null},
+                {p => p.Height > 100 ||  p.Width > 100  ? new DeliveryCost(ParcelSize.Xl, 25) : null},
             };
         }
 
         public DeliveryCost CalculateDeliveryCost(Parcel parcel)
         {
-            if (this.sizeMap.ContainsKey(parcelSize) && this.
-                return this.sizeMap[parcelSize];
-
-            
+            foreach (var map in sizeMap)
+            {
+                if (map(parcel.Dimension) != null)
+                    return map(parcel.Dimension);
+            }
 
             throw new NotImplementedException();
         }
