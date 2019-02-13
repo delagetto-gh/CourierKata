@@ -4,7 +4,12 @@ namespace CourierKata.Api
 {
     public class DeliveryCostBillDto
     {
-        public ItemDto[] Items { get; set; }
+        public DeliveryCostBillDto()
+        {
+            this.Items = new List<ItemDto>();
+        }
+        
+        public List<ItemDto> Items { get; set; }
 
         public decimal TotalCost { get; set; }
     }

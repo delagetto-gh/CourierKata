@@ -1,6 +1,6 @@
 namespace CourierKata.Domain
 {
-    public class Parcel
+    public struct Parcel
     {
         public Parcel(int height, int width)
         {
