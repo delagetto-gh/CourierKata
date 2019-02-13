@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourierKata.Domain", "Couri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourierKata.Domain.Tests", "Tests\CourierKata.Domain.Tests\CourierKata.Domain.Tests.csproj", "{994251E8-50AD-4B6E-B609-262CC5E31407}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourierKata.App", "CourierKata.App\CourierKata.App.csproj", "{BB5C1EAE-479B-481F-8442-06C671FCE78A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,18 @@ Global
 		{994251E8-50AD-4B6E-B609-262CC5E31407}.Release|x64.Build.0 = Release|Any CPU
 		{994251E8-50AD-4B6E-B609-262CC5E31407}.Release|x86.ActiveCfg = Release|Any CPU
 		{994251E8-50AD-4B6E-B609-262CC5E31407}.Release|x86.Build.0 = Release|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Debug|x64.Build.0 = Debug|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Debug|x86.Build.0 = Debug|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Release|x64.ActiveCfg = Release|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Release|x64.Build.0 = Release|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Release|x86.ActiveCfg = Release|Any CPU
+		{BB5C1EAE-479B-481F-8442-06C671FCE78A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B9A1BA16-FEDC-4058-B93F-6180502D3312} = {ABBCADFE-089C-48D0-BD11-70300DF2F89A}
